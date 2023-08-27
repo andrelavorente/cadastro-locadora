@@ -4,7 +4,6 @@ import session from "express-session";
 import rotaLogin from "./rotas/rotaLogin.js";
 
 const host = "0.0.0.0";
-
 const porta = 3202;
 
 const app = express();
