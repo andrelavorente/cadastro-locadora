@@ -16,7 +16,7 @@ input {
   font-size: 15px;
 }
 .btn btn-primary {
-  background-color: dodgerblue;
+  background-color: #5a0404;
   border: none;
   padding: 100px;
   width: 100%;
@@ -27,7 +27,7 @@ input {
 }
 
 .btn btn-secundary {
-  background-color: dodgerblue;
+  background-color: #5a0404;
   border: none;
   padding: 100px;
   width: 100%;
@@ -36,6 +36,6 @@ input {
   font-size: 15px;
 }
 button:hover {
-  background-color: deepskyblue;
+  background-color: #7e0303;
   cursor: pointer;
 }
