@@ -1,5 +1,5 @@
-import Cliente from "./../modelo/Cliente";
-import conectar from "./Conexao";
+import Cliente from "../modelo/Cliente.js";
+import conectar from "./Conexao.js";
 
 export default class ClienteDAO {
   async gravar(cliente) {
