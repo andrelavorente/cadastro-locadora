@@ -1,4 +1,4 @@
-import Cliente from "../modelo/Cliente.js";
+import Cliente from "../Modelo/Cliente.js";
 import conectar from "./Conexao.js";
 
 export default class ClienteDAO {
