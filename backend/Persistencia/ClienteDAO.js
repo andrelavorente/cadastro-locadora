@@ -6,7 +6,7 @@ export default class ClienteDAO {
     if (cliente instanceof Cliente) {
       const conexao = await conectar();
       const sql =
-        "INSERT INTO cliente(nome, sobrenome, endereco, cpf, cidade, telefone) VALUES(?,?,?,?,?,?)";
+        "INSERT INTO cliente (nome, sobrenome, endereco, cpf, cidade, telefone) VALUES (?, ?, ?, ?, ?, ?)";
       const parametros = [
         cliente.nome,
         cliente.sobrenome,
