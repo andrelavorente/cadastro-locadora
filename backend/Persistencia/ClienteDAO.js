@@ -42,7 +42,7 @@ export default class ClienteDAO {
       const conexao = await conectar();
       const sql = "DELETE FROM cliente WHERE cpf = ? ";
       const parametros = [cliente.cpf];
-      await conexao.execute(sql, parametros);
+      await conexao.query(sql, parametros);
       global.poolConexoes.releaseConnection(conexao);
     }
   }
