@@ -15,7 +15,7 @@ export default class ClienteDAO {
         cliente.cidade,
         cliente.telefone,
       ];
-      await conexao.execute(sql, parametros);
+      await conexao.query(sql, parametros);
       global.poolConexoes.releaseConnection(conexao);
     }
   }
