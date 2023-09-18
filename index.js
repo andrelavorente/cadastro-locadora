@@ -9,7 +9,7 @@ const porta = 3202;
 
 const app = express();
 
-app;
+app.use(express.json());
 
 app.use(
   session({
