@@ -5,10 +5,11 @@ const rotaCliente = Router();
 
 const cliCTRL = new ClienteCtrl();
 
-rotaCliente.get("/:termo", cliCTRL.consultar);
-rotaCliente.get("/", cliCTRL.consultar);
-rotaCliente.post("/", cliCTRL.gravar);
-rotaCliente.put("/", cliCTRL.atualizar);
-rotaCliente.delete("/", cliCTRL.excluir);
+rotaCliente
+  .get("/:termo", cliCTRL.consultar)
+  .get("/", cliCTRL.consultar)
+  .post("/", cliCTRL.gravar)
+  .put("/", cliCTRL.atualizar)
+  .delete("/", cliCTRL.excluir);
 
 export default rotaCliente;
