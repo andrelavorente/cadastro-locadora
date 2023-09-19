@@ -25,10 +25,16 @@ app.use(
 app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static("./public"));
-app.use("/clientes", rotaCliente);
 
 app.use("/login", rotaLogin);
 app.use(autenticar, express.static("./protegido"));
+
+app.use("/clientes", (req, res) => {
+  const cliente = new Cliente();
+  cliente.consultar("").then((listaClientes) => {
+    res.json(listaClientes);
+  });
+});
 
 app.listen(porta, host, () => {
   console.log("Servidor escutando em", host, porta);
