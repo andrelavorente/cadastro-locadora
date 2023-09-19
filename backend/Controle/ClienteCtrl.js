@@ -1,4 +1,4 @@
-import Cliente from "../Modelo/Cliente.js";
+import Cliente from "../modelo/Cliente.js";
 
 export default class ClienteCtrl {
   gravar(req, res) {
