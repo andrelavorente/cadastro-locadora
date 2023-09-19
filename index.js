@@ -9,6 +9,8 @@ const porta = 3202;
 
 const app = express();
 
+app.use(express.json());
+
 app.use(
   session({
     secret: "Minh4ChAveS3crEt4",
