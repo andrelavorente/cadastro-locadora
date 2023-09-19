@@ -29,12 +29,7 @@ app.use(express.static("./public"));
 app.use("/login", rotaLogin);
 app.use(autenticar, express.static("./protegido"));
 
-app.use("/clientes", (req, res) => {
-  const cliente = new Cliente();
-  cliente.consultar("").then((listaClientes) => {
-    res.json(listaClientes);
-  });
-});
+app.use("/clientes", rotaCliente);
 
 app.listen(porta, host, () => {
   console.log("Servidor escutando em", host, porta);
